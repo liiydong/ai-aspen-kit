@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 900" font-family="SimHei,Microsoft YaHei,sans-serif">
+<rect width="1500" height="900" fill="#fbfcfe"/>
+<text x="750" y="46" font-size="26" font-weight="bold" fill="#1f4e79" text-anchor="middle">年产 10000 吨烟酰胺装置 总方块流程图（BFD）</text>
+<text x="750" y="72" font-size="14" fill="#555" text-anchor="middle">化学法（氨氧化 → 吸收 → 萃取 → 精馏 → 化学水解 → 精制）　共 36 个单元　图号 C-1</text>
+<rect x="60" y="150" width="160" height="86" rx="8" fill="#f2f2f2" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="140" y="184" font-size="14" fill="#1a1a1a" text-anchor="middle">3-甲基吡啶</text>
+<text x="140" y="204" font-size="14" fill="#1a1a1a" text-anchor="middle">液氨、空气</text>
+<rect x="250" y="150" width="160" height="86" rx="8" fill="#fdece7" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="330" y="184" font-size="14" fill="#1a1a1a" text-anchor="middle">① 氨氧化</text>
+<text x="330" y="204" font-size="14" fill="#1a1a1a" text-anchor="middle">R-101（405 ℃）</text>
+<rect x="440" y="150" width="160" height="86" rx="8" fill="#e8f3ec" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="520" y="184" font-size="14" fill="#1a1a1a" text-anchor="middle">② 急冷吸收</text>
+<text x="520" y="204" font-size="14" fill="#1a1a1a" text-anchor="middle">T-201 / T-202</text>
+<rect x="630" y="150" width="160" height="86" rx="8" fill="#e8f3ec" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="710" y="184" font-size="14" fill="#1a1a1a" text-anchor="middle">③ 甲苯萃取</text>
+<text x="710" y="204" font-size="14" fill="#1a1a1a" text-anchor="middle">T-301 / T-302</text>
+<rect x="820" y="150" width="160" height="86" rx="8" fill="#e8f3ec" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="900" y="184" font-size="14" fill="#1a1a1a" text-anchor="middle">④ 四塔精馏</text>
+<text x="900" y="204" font-size="14" fill="#1a1a1a" text-anchor="middle">T-401~T-404</text>
+<rect x="1010" y="150" width="160" height="86" rx="8" fill="#fdece7" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="1090" y="184" font-size="14" fill="#1a1a1a" text-anchor="middle">⑤ 化学水解</text>
+<text x="1090" y="204" font-size="14" fill="#1a1a1a" text-anchor="middle">R-501（140 ℃）</text>
+<rect x="1200" y="150" width="160" height="86" rx="8" fill="#e8f3ec" stroke="#1f4e79" stroke-width="1.6"/>
+<text x="1280" y="184" font-size="14" fill="#1a1a1a" text-anchor="middle">⑥ 精制</text>
+<text x="1280" y="204" font-size="14" fill="#1a1a1a" text-anchor="middle">蒸发/结晶/干燥</text>
+<line x1="220" y1="193" x2="246" y2="193" stroke="#1f4e79" stroke-width="2.2" marker-end="url(#ar)"/>
+<line x1="410" y1="193" x2="436" y2="193" stroke="#1f4e79" stroke-width="2.2" marker-end="url(#ar)"/>
+<line x1="600" y1="193" x2="626" y2="193" stroke="#1f4e79" stroke-width="2.2" marker-end="url(#ar)"/>
+<line x1="790" y1="193" x2="816" y2="193" stroke="#1f4e79" stroke-width="2.2" marker-end="url(#ar)"/>
+<line x1="980" y1="193" x2="1006" y2="193" stroke="#1f4e79" stroke-width="2.2" marker-end="url(#ar)"/>
+<line x1="1170" y1="193" x2="1196" y2="193" stroke="#1f4e79" stroke-width="2.2" marker-end="url(#ar)"/>
+<rect x="1200" y="300" width="160" height="60" rx="8" fill="#fff5e6" stroke="#c47f00" stroke-width="1.6"/>
+<text x="1280" y="326" font-size="14" fill="#7a4a00" text-anchor="middle">烟酰胺产品</text>
+<text x="1280" y="346" font-size="13" fill="#7a4a00" text-anchor="middle">1419.5 kg/h（99.62%）</text>
+<line x1="1280" y1="236" x2="1280" y2="296" stroke="#c47f00" stroke-width="2.2" marker-end="url(#ar2)"/>
+<rect x="440" y="300" width="160" height="60" rx="6" fill="#dbe7f3" stroke="#8aa4bd" stroke-width="1.2"/>
+<text x="520" y="326" font-size="12" fill="#33475b" text-anchor="middle">尾气 S-130</text>
+<text x="520" y="343" font-size="12" fill="#33475b" text-anchor="middle">5805.9 kg/h</text>
+<rect x="630" y="300" width="160" height="60" rx="6" fill="#dbe7f3" stroke="#8aa4bd" stroke-width="1.2"/>
+<text x="710" y="326" font-size="12" fill="#33475b" text-anchor="middle">废水 S-213</text>
+<text x="710" y="343" font-size="12" fill="#33475b" text-anchor="middle">2037.3 kg/h</text>
+<rect x="820" y="300" width="160" height="60" rx="6" fill="#f3e6f7" stroke="#8aa4bd" stroke-width="1.2"/>
+<text x="900" y="326" font-size="12" fill="#33475b" text-anchor="middle">副产 4-CP S-119</text>
+<text x="900" y="343" font-size="12" fill="#33475b" text-anchor="middle">6.6 kg/h</text>
+<rect x="1010" y="300" width="160" height="60" rx="6" fill="#dbe7f3" stroke="#8aa4bd" stroke-width="1.2"/>
+<text x="1090" y="326" font-size="12" fill="#33475b" text-anchor="middle">三效冷凝水</text>
+<text x="1090" y="343" font-size="12" fill="#33475b" text-anchor="middle">2695.2 kg/h</text>
+<rect x="1010" y="390" width="160" height="60" rx="6" fill="#dbe7f3" stroke="#8aa4bd" stroke-width="1.2"/>
+<text x="1090" y="416" font-size="12" fill="#33475b" text-anchor="middle">母液排放 S-405C</text>
+<text x="1090" y="433" font-size="12" fill="#33475b" text-anchor="middle">93.9 kg/h</text>
+<rect x="630" y="390" width="160" height="60" rx="6" fill="#e6f3e6" stroke="#8aa4bd" stroke-width="1.2"/>
+<text x="710" y="416" font-size="12" fill="#33475b" text-anchor="middle">回收甲苯 S-115</text>
+<text x="710" y="433" font-size="12" fill="#33475b" text-anchor="middle">2346.2 kg/h</text>
+<path d="M 950 360 L 950 470 L 300 470 L 300 240" fill="none" stroke="#0e7a3c" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#ar3)"/>
+<text x="640" y="490" font-size="13" fill="#0e7a3c" text-anchor="middle">循环：未反应 3-MP（S-117M，14.5 kg/h）返回反应器</text>
+<path d="M 1290 400 L 1290 540 L 700 540 L 700 250" fill="none" stroke="#0e7a3c" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#ar3)"/>
+<text x="990" y="560" font-size="13" fill="#0e7a3c" text-anchor="middle">循环：结晶母液（S-405B，1079.8 kg/h，92%）返回脱色/蒸发工段</text>
+<path d="M 800 236 L 800 660 L 900 660 L 900 250" fill="none" stroke="#0e7a3c" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#ar3)"/>
+<text x="1010" y="680" font-size="13" fill="#0e7a3c" text-anchor="middle">循环：甲苯（S-117T，80.1 kg/h）返回萃取塔</text>
+<rect x="60" y="720" width="1380" height="120" rx="8" fill="#f7f9fc" stroke="#8aa4bd"/>
+<text x="80" y="748" font-size="15" font-weight="bold" fill="#1f4e79">总物料平衡（Aspen Plus V15 全流程模拟校核）</text>
+<text x="80" y="776" font-size="13" fill="#333">进料 15006.04 kg/h ＝ 出料 15006.04 kg/h，偏差 0.0000%；Terminal / Severe / Errors 均为 0</text>
+<text x="80" y="800" font-size="13" fill="#333">产品 1419.5 kg/h（烟酰胺 99.62 wt%、水分 0.28 wt%）＝ 10221 t/a（设计 10000 t/a 的 102.2%）</text>
+<text x="80" y="824" font-size="13" fill="#333">3-甲基吡啶单耗 910.7 kg/t、总收率 83.73%（设计 936.89 kg/t、82.25%）</text>
+<defs><marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#1f4e79"/></marker>
+<marker id="ar2" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#c47f00"/></marker>
+<marker id="ar3" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#0e7a3c"/></marker></defs>
+</svg>

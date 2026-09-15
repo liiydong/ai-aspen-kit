@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1720 888" font-family="SimHei,Microsoft YaHei,sans-serif">
+<rect width="1720" height="888" fill="#fbfcfe"/>
+<text x="860" y="40" font-size="25" font-weight="bold" fill="#1f4e79" text-anchor="middle">年产 10000 吨烟酰胺装置 工艺物料流程图（PFD）</text>
+<text x="860" y="66" font-size="13.5" fill="#555" text-anchor="middle">化学法　36 个单元 / 61 条流股　物料平衡偏差 0.0000%　图号 C-2　（流量单位 kg/h）</text>
+<rect x="20" y="20" width="96" height="114" rx="10" fill="#fdece7" stroke="#c9d8e6"/>
+<text x="34" y="120" font-size="15" font-weight="bold" fill="#1f4e79">反应与吸收工段</text>
+<rect x="34" y="136" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="110" y="156" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">C-101</text>
+<text x="110" y="173" font-size="11.5" fill="#1a1a1a" text-anchor="middle">空气鼓风机</text>
+<text x="110" y="184" font-size="10" fill="#666" text-anchor="middle">S-103 5401.1 → S-127</text>
+<line x1="186" y1="162" x2="196" y2="162" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="198" y="136" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="274" y="156" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">E-102</text>
+<text x="274" y="173" font-size="11.5" fill="#1a1a1a" text-anchor="middle">空气预热器</text>
+<text x="274" y="184" font-size="10" fill="#666" text-anchor="middle">S-127 → S-128 150℃</text>
+<line x1="350" y1="162" x2="360" y2="162" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="362" y="136" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="438" y="156" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">E-103</text>
+<text x="438" y="173" font-size="11.5" fill="#1a1a1a" text-anchor="middle">氨汽化器</text>
+<text x="438" y="184" font-size="10" fill="#666" text-anchor="middle">S-102 243.9 → S-126</text>
+<line x1="514" y1="162" x2="524" y2="162" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="526" y="136" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="602" y="156" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">M-101</text>
+<text x="602" y="173" font-size="11.5" fill="#1a1a1a" text-anchor="middle">原料混合器</text>
+<text x="602" y="184" font-size="10" fill="#666" text-anchor="middle">+S-117M 14.5 循环</text>
+<line x1="678" y1="162" x2="688" y2="162" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="690" y="136" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="766" y="156" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">E-101</text>
+<text x="766" y="173" font-size="11.5" fill="#1a1a1a" text-anchor="middle">原料气预热器</text>
+<text x="766" y="184" font-size="10" fill="#666" text-anchor="middle">S-104 → S-105</text>
+<line x1="842" y1="162" x2="852" y2="162" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="854" y="136" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="930" y="156" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">R-101</text>
+<text x="930" y="173" font-size="11.5" fill="#1a1a1a" text-anchor="middle">氨氧化反应器</text>
+<text x="930" y="184" font-size="10" fill="#666" text-anchor="middle">405℃  S-106</text>
+<line x1="1006" y1="162" x2="1016" y2="162" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="1018" y="136" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="1094" y="156" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">E-105</text>
+<text x="1094" y="173" font-size="11.5" fill="#1a1a1a" text-anchor="middle">废热锅炉</text>
+<text x="1094" y="184" font-size="10" fill="#666" text-anchor="middle">回收蒸汽 11.8 t/h</text>
+<line x1="1170" y1="162" x2="1180" y2="162" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="1182" y="136" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="1258" y="156" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">E-104</text>
+<text x="1258" y="173" font-size="11.5" fill="#1a1a1a" text-anchor="middle">反应气冷却器</text>
+<text x="1258" y="184" font-size="10" fill="#666" text-anchor="middle">S-129 → S-108</text>
+<line x1="1334" y1="162" x2="1344" y2="162" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="20" y="20" width="224" height="114" rx="10" fill="#e8f3ec" stroke="#c9d8e6"/>
+<text x="34" y="248" font-size="15" font-weight="bold" fill="#1f4e79">急冷吸收与萃取工段</text>
+<rect x="34" y="264" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="110" y="284" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">T-201</text>
+<text x="110" y="301" font-size="11.5" fill="#1a1a1a" text-anchor="middle">急冷吸收塔</text>
+<text x="110" y="312" font-size="10" fill="#666" text-anchor="middle">S-107 2334.3 水</text>
+<line x1="186" y1="290" x2="196" y2="290" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="198" y="264" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="274" y="284" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">T-202</text>
+<text x="274" y="301" font-size="11.5" fill="#1a1a1a" text-anchor="middle">尾气洗涤塔</text>
+<text x="274" y="312" font-size="10" fill="#666" text-anchor="middle">S-130 5805.9 排空</text>
+<line x1="350" y1="290" x2="360" y2="290" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="362" y="264" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="438" y="284" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">E-201</text>
+<text x="438" y="301" font-size="11.5" fill="#1a1a1a" text-anchor="middle">吸收液冷却器</text>
+<text x="438" y="312" font-size="10" fill="#666" text-anchor="middle">S-110 → S-112 40℃</text>
+<line x1="514" y1="290" x2="524" y2="290" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="526" y="264" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="602" y="284" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">T-301</text>
+<text x="602" y="301" font-size="11.5" fill="#1a1a1a" text-anchor="middle">甲苯萃取塔</text>
+<text x="602" y="312" font-size="10" fill="#666" text-anchor="middle">S-111 2322.3 甲苯</text>
+<line x1="678" y1="290" x2="688" y2="290" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="690" y="264" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="766" y="284" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">P-301</text>
+<text x="766" y="301" font-size="11.5" fill="#1a1a1a" text-anchor="middle">萃取相泵</text>
+<text x="766" y="312" font-size="10" fill="#666" text-anchor="middle">S-114 → S-114A</text>
+<line x1="842" y1="290" x2="852" y2="290" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="854" y="264" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="930" y="284" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">T-302</text>
+<text x="930" y="301" font-size="11.5" fill="#1a1a1a" text-anchor="middle">萃余水汽提塔</text>
+<text x="930" y="312" font-size="10" fill="#666" text-anchor="middle">S-213 2037.3 废水</text>
+<line x1="1006" y1="290" x2="1016" y2="290" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="20" y="20" width="352" height="114" rx="10" fill="#e8f3ec" stroke="#c9d8e6"/>
+<text x="34" y="376" font-size="15" font-weight="bold" fill="#1f4e79">四塔精馏工段</text>
+<rect x="34" y="392" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="110" y="412" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">T-401</text>
+<text x="110" y="429" font-size="11.5" fill="#1a1a1a" text-anchor="middle">脱甲苯塔</text>
+<text x="110" y="440" font-size="10" fill="#666" text-anchor="middle">顶 53.2℃/0.24 bar</text>
+<line x1="186" y1="418" x2="196" y2="418" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="198" y="392" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="274" y="412" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">P-401</text>
+<text x="274" y="429" font-size="11.5" fill="#1a1a1a" text-anchor="middle">粗 3-CP 泵</text>
+<text x="274" y="440" font-size="10" fill="#666" text-anchor="middle">S-116 → S-116A</text>
+<line x1="350" y1="418" x2="360" y2="418" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="362" y="392" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="438" y="412" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">T-402</text>
+<text x="438" y="429" font-size="11.5" fill="#1a1a1a" text-anchor="middle">脱轻组分塔</text>
+<text x="438" y="440" font-size="10" fill="#666" text-anchor="middle">D:F = 0.070</text>
+<line x1="514" y1="418" x2="524" y2="418" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="526" y="392" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="602" y="412" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">M-504</text>
+<text x="602" y="429" font-size="11.5" fill="#1a1a1a" text-anchor="middle">甲苯回收器</text>
+<text x="602" y="440" font-size="10" fill="#666" text-anchor="middle">3-MP/甲苯分流</text>
+<line x1="678" y1="418" x2="688" y2="418" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="690" y="392" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="766" y="412" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">T-403</text>
+<text x="766" y="429" font-size="11.5" fill="#1a1a1a" text-anchor="middle">脱 4-CP 塔</text>
+<text x="766" y="440" font-size="10" fill="#666" text-anchor="middle">S-119 6.6 副产</text>
+<line x1="842" y1="418" x2="852" y2="418" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="854" y="392" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="930" y="412" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">T-404</text>
+<text x="930" y="429" font-size="11.5" fill="#1a1a1a" text-anchor="middle">3-CP 产品塔</text>
+<text x="930" y="440" font-size="10" fill="#666" text-anchor="middle">D:F = 0.990  S-121</text>
+<line x1="1006" y1="418" x2="1016" y2="418" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="20" y="20" width="480" height="114" rx="10" fill="#fdece7" stroke="#c9d8e6"/>
+<text x="34" y="504" font-size="15" font-weight="bold" fill="#1f4e79">化学水解工段</text>
+<rect x="34" y="520" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="110" y="540" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">R-501</text>
+<text x="110" y="557" font-size="11.5" fill="#1a1a1a" text-anchor="middle">化学水解釜</text>
+<text x="110" y="568" font-size="10" fill="#666" text-anchor="middle">140℃  转化率 99%</text>
+<line x1="186" y1="546" x2="196" y2="546" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="198" y="520" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="274" y="540" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">E-501</text>
+<text x="274" y="557" font-size="11.5" fill="#1a1a1a" text-anchor="middle">水解液冷却器</text>
+<text x="274" y="568" font-size="10" fill="#666" text-anchor="middle">140 → 80℃</text>
+<line x1="350" y1="546" x2="360" y2="546" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="20" y="20" width="608" height="176" rx="10" fill="#e8f3ec" stroke="#c9d8e6"/>
+<text x="34" y="632" font-size="15" font-weight="bold" fill="#1f4e79">精制工段（脱色—蒸发—结晶—离心—干燥）</text>
+<rect x="34" y="648" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="110" y="668" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">M-501</text>
+<text x="110" y="685" font-size="11.5" fill="#1a1a1a" text-anchor="middle">脱色釜</text>
+<text x="110" y="696" font-size="10" fill="#666" text-anchor="middle">+S-405B 1079.8 循环</text>
+<line x1="186" y1="674" x2="196" y2="674" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="198" y="648" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="274" y="668" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">M-502</text>
+<text x="274" y="685" font-size="11.5" fill="#1a1a1a" text-anchor="middle">板框压滤机</text>
+<text x="274" y="696" font-size="10" fill="#666" text-anchor="middle">S-211 29.6 废炭</text>
+<line x1="350" y1="674" x2="360" y2="674" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="362" y="648" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="438" y="668" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">E-601</text>
+<text x="438" y="685" font-size="11.5" fill="#1a1a1a" text-anchor="middle">一效蒸发器</text>
+<text x="438" y="696" font-size="10" fill="#666" text-anchor="middle">1.0 bar  蒸发 1111.9</text>
+<line x1="514" y1="674" x2="524" y2="674" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="526" y="648" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="602" y="668" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">E-604</text>
+<text x="602" y="685" font-size="11.5" fill="#1a1a1a" text-anchor="middle">一效冷凝器</text>
+<text x="602" y="696" font-size="10" fill="#666" text-anchor="middle">S-216</text>
+<line x1="678" y1="674" x2="688" y2="674" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="690" y="648" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="766" y="668" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">E-602</text>
+<text x="766" y="685" font-size="11.5" fill="#1a1a1a" text-anchor="middle">二效蒸发器</text>
+<text x="766" y="696" font-size="10" fill="#666" text-anchor="middle">0.47 bar  蒸发 908.3</text>
+<line x1="842" y1="674" x2="852" y2="674" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="854" y="648" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="930" y="668" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">E-605</text>
+<text x="930" y="685" font-size="11.5" fill="#1a1a1a" text-anchor="middle">二效冷凝器</text>
+<text x="930" y="696" font-size="10" fill="#666" text-anchor="middle">S-217</text>
+<line x1="1006" y1="674" x2="1016" y2="674" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="1018" y="648" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="1094" y="668" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">E-603</text>
+<text x="1094" y="685" font-size="11.5" fill="#1a1a1a" text-anchor="middle">三效蒸发器</text>
+<text x="1094" y="696" font-size="10" fill="#666" text-anchor="middle">0.20 bar  蒸发 675.0</text>
+<line x1="1170" y1="674" x2="1180" y2="674" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="34" y="710" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="110" y="730" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">E-606</text>
+<text x="110" y="747" font-size="11.5" fill="#1a1a1a" text-anchor="middle">三效冷凝器</text>
+<text x="110" y="758" font-size="10" fill="#666" text-anchor="middle">S-218</text>
+<line x1="186" y1="736" x2="196" y2="736" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="198" y="710" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="274" y="730" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">C-601</text>
+<text x="274" y="747" font-size="11.5" fill="#1a1a1a" text-anchor="middle">结晶釜</text>
+<text x="274" y="758" font-size="10" fill="#666" text-anchor="middle">70.89 → 25℃  收率 75%</text>
+<line x1="350" y1="736" x2="360" y2="736" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="362" y="710" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="438" y="730" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">M-601</text>
+<text x="438" y="747" font-size="11.5" fill="#1a1a1a" text-anchor="middle">离心机</text>
+<text x="438" y="758" font-size="10" fill="#666" text-anchor="middle">S-208 湿品 1492.5</text>
+<line x1="514" y1="736" x2="524" y2="736" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="526" y="710" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="602" y="730" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">P-501</text>
+<text x="602" y="747" font-size="11.5" fill="#1a1a1a" text-anchor="middle">母液泵</text>
+<text x="602" y="758" font-size="10" fill="#666" text-anchor="middle">S-405 1173.7</text>
+<line x1="678" y1="736" x2="688" y2="736" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="690" y="710" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="766" y="730" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">M-503</text>
+<text x="766" y="747" font-size="11.5" fill="#1a1a1a" text-anchor="middle">母液分流器</text>
+<text x="766" y="758" font-size="10" fill="#666" text-anchor="middle">92% 循环 / 8% 排放</text>
+<line x1="842" y1="736" x2="852" y2="736" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="854" y="710" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="930" y="730" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">D-601</text>
+<text x="930" y="747" font-size="11.5" fill="#1a1a1a" text-anchor="middle">气流干燥器</text>
+<text x="930" y="758" font-size="10" fill="#666" text-anchor="middle">130℃/0.05 bar  S-209 产品</text>
+<line x1="1006" y1="736" x2="1016" y2="736" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<rect x="1018" y="710" width="152" height="52" rx="6" fill="#ffffff" stroke="#1f4e79" stroke-width="1.4"/>
+<text x="1094" y="730" font-size="12.5" font-weight="bold" fill="#1f4e79" text-anchor="middle">P-302</text>
+<text x="1094" y="747" font-size="11.5" fill="#1a1a1a" text-anchor="middle">废水泵</text>
+<text x="1094" y="758" font-size="10" fill="#666" text-anchor="middle">S-213A 送处理</text>
+<line x1="1170" y1="736" x2="1180" y2="736" stroke="#1f4e79" stroke-width="1.8" marker-end="url(#a1)"/>
+<defs><marker id="a1" markerWidth="7" markerHeight="7" refX="5.5" refY="2.5" orient="auto"><path d="M0,0 L5.5,2.5 L0,5 z" fill="#1f4e79"/></marker></defs>
+<rect x="1140" y="814" width="560" height="60" fill="none" stroke="#8aa4bd"/>
+<line x1="1140" y1="844" x2="1700" y2="844" stroke="#8aa4bd"/>
+<line x1="1420" y1="814" x2="1420" y2="874" stroke="#8aa4bd"/>
+<text x="1152" y="834" font-size="12" fill="#333">设计项目：年产 10000 t 烟酰胺（化学法）</text>
+<text x="1152" y="864" font-size="12" fill="#333">校核：Aspen Plus V15 全流程模拟</text>
+<text x="1432" y="834" font-size="12" fill="#333">图号：C-2</text>
+<text x="1432" y="864" font-size="12" fill="#333">比例：示意</text>
+</svg>
