@@ -1,0 +1,133 @@
+# -*- coding: utf-8 -*-
+"""T-403 改回 RadFrac 决定性测试 v2"""
+import sys, re, time, os
+sys.stdout.reconfigure(encoding='utf-8')
+import win32com.client as win32
+import pythoncom
+
+SRC = r'D:\<化工工作区>\NA-Chemical-10000t_最终定稿.bkp'
+OUT = r'D:\<化工工作区>\_probe\t403_rf.bkp'
+t = open(SRC, encoding='utf-8', errors='ignore').read()
+L = []
+
+# 1) 注册表
+t, n1 = re.subn(r'\nT-403\nSep\nBuilt-In\nSEP\n>VERSION 0\n',
+                '\nT-403\nRadFrac\nBuilt-In\nRADFRAC\n>VERSION 0\n', t)
+L.append('1) 注册表 %d' % n1)
+
+# 2) FLOWSHEET 记录（整体替换，含换行容错）
+pat = (r'BLOCK\s+BLKID\s*=\s*"T-403"\s+BLKTYPE\s*=\s*"SEP"\s+MDLTYPE\s*=\s*"Sep"\s+'
+       r'IN\s*=\s*\(\s*"S-118"\s+M0-1\s*\)\s+OUT\s*=\s*\(\s*"S-119"\s+M0-1\s+"S-120"\s+M0-1\s*\)')
+rep = ('BLOCK BLKID = "T-403" BLKTYPE = "RADFRAC" MDLTYPE = "RadFrac" '
+       'IN = ( "S-118" M0-1 ) OUT = ( "S-119" M1-2 "S-120" M2-3 )')
+t, n2 = re.subn(pat, rep, t, count=1)
+L.append('2) FLOWSHEET %d' % n2)
+
+# 3) 段落
+m = re.search(r'\?\s*BLOCK\s+SEP\s+"T-403"\s*\?', t)
+if m:
+    nx = re.search(r'\n\?\s*BLOCK\s', t[m.end():])
+    e = m.end() + nx.start() if nx else m.end() + 3000
+    new = ('? BLOCK\nRADFRAC "T-403" ? ; "METCBAR_MOLE" ; ; FRACT1 ; \\\n'
+           'PARAM NSTAGE = 45 NSTAGEMAX = 46 \\ \\\nPARAM2 \\ \\\n'
+           '"COL-CONFIG" CONDENSER = TOTAL REBOILER = KETTLE \\ \\\n'
+           'FEEDS FEED-SID = "S-118" FEED-STAGE = 22 \\ \\\n'
+           'PRODUCTS PROD-STREAM = "S-119"\nPROD-STAGE = 1 PROD-PHASE = L P-S = N /\n'
+           'PROD-STREAM = "S-120"\nPROD-STAGE = 45 PROD-PHASE = L P-S = N \\ \\\n'
+           '"P-SPEC2" PRES1 = 0.40\n<20> <5> \\ \\\n'
+           '"COL-SPECS" D:F = 0.0050\n<-1> <0> BASIS-RDV = 0.0 <0> <0> BASIS-RR = 18.0\n<-1> <0> D:F-BASIS = MOLE \\ \\\n'
+           'T-EST TEMP-STAGE = 1 TEMP-EST = 165.0\n<22> <4> /\nTEMP-STAGE = 45 TEMP-EST = 172.0\n<22> <4> \\ \\\n'
+           '"KLL-VECS" \\ \\\n"TRSZ-VECS" \\ \\\n"PCKSR-VECS" \\\n')
+    t = t[:m.start()] + new + t[e:]
+    L.append('3) 段落已替换')
+else:
+    L.append('3) 段落未定位')
+
+# 4) DSET
+t, n4 = re.subn(r'BLOCK SEP T-403', 'BLOCK RADFRAC T-403', t)
+L.append('4) DSET %d' % n4)
+
+# 5) 校验
+chk = re.search(r'BLOCK\s+BLKID\s*=\s*"T-403".{0,180}', t, re.S)
+L.append('5) 校验: %s' % (re.sub(r'\s+', ' ', chk.group()) if chk else 'NOT FOUND'))
+open(OUT, 'w', encoding='utf-8', errors='ignore').write(t)
+L.append('写出 %s %d' % (OUT, os.path.getsize(OUT)))
+
+MSGS = []
+class Sink:
+    def OnControlPanelMessage(self, *a):
+        s = ' '.join(str(x) for x in a).strip()
+        if s and s != 'False':
+            MSGS.append(s)
+
+try:
+    doc = win32.DispatchEx('Apwn.Document')
+    doc.SuppressDialogs = True
+    win32.WithEvents(doc, Sink)
+    doc.InitFromArchive2(OUT)
+    time.sleep(4)
+    doc.Engine.Run2(False)
+    t0 = time.time()
+    while time.time() - t0 < 600:
+        pythoncom.PumpWaitingMessages()
+        time.sleep(0.25)
+        if time.time() - t0 > 10:
+            try:
+                if not bool(doc.Engine.IsRunning):
+                    break
+            except Exception:
+                break
+    for _ in range(80):
+        pythoncom.PumpWaitingMessages()
+        time.sleep(0.05)
+
+    def g(p):
+        n = doc.Tree.FindNode(p)
+        if n is None:
+            return None
+        try:
+            return n.Value
+        except Exception:
+            return None
+
+    def comp(s):
+        nn = doc.Tree.FindNode(r'\Data\Streams\%s\Output\MASSFLOW3' % s)
+        d = {}
+        if nn is None:
+            return d
+        try:
+            for i in range(nn.Elements.Count):
+                e = nn.Elements.Item(i)
+                try:
+                    v = float(e.Value) if e.Value is not None else 0.0
+                    if abs(v) > 1e-6:
+                        d[e.Name] = v
+                except Exception:
+                    pass
+        except Exception:
+            pass
+        return d
+
+    L.append('')
+    L.append('===== 面板关键行 =====')
+    for i, x in enumerate(MSGS):
+        if re.search(r'Terminal|Severe|Errors|Warnings|completed|T-403|ERROR', x):
+            L.append('  %d | %s' % (i, x[:170]))
+    L.append('')
+    L.append('===== T-403(RadFrac) =====')
+    for k in ['TOP_TEMP', 'BOTTOM_TEMP', 'RR', 'D:F', 'COND_DUTY', 'REB_DUTY']:
+        L.append('  %-12s = %s' % (k, g(r'\Data\Blocks\T-403\Output\%s' % k)))
+    for s in ['S-118', 'S-119', 'S-120']:
+        c = comp(s)
+        tt = sum(c.values())
+        if tt:
+            L.append('  %s %.2f kg/h : 3-CP %.2f (%.3f%%) 4-CP %.2f (%.3f%%)  其他 %s'
+                     % (s, tt, c.get('3-CP', 0), c.get('3-CP', 0) / tt * 100,
+                        c.get('4-CP', 0), c.get('4-CP', 0) / tt * 100,
+                        ', '.join('%s %.3f' % (k, v) for k, v in sorted(c.items(), key=lambda x: -x[1])[:4])))
+    doc.Close()
+except Exception as ex:
+    L.append('运行异常: %s' % ex)
+
+open(r'D:\<化工工作区>\_probe\t403_test.txt', 'w', encoding='utf-8').write('\n'.join(L))
+print('DONE')

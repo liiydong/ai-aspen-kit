@@ -1,0 +1,33 @@
+# ================================================================
+#  .gitattributes —— 换行符与二进制文件处理
+#
+#  ⚠️ 这个文件对本仓库很关键：
+#  .bkp 里含 Base64 编码段与二进制数据，如果 Git 按文本处理并做
+#  CRLF <-> LF 转换，会【直接损坏模型文件】。所以必须显式声明 binary。
+# ================================================================
+
+# 默认：文本文件统一用 LF（避免跨平台出现「整个文件都改了」的假 diff）
+* text=auto eol=lf
+
+# ---------- 二进制 / 编码文件：禁止任何转换 ----------
+*.bkp   binary
+*.apwz  binary
+*.xlsx  binary
+*.xls   binary
+*.docx  binary
+*.doc   binary
+*.pdf   binary
+*.zip   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+
+# ---------- 语言统计：文档不计入代码行数 ----------
+*.md    linguist-documentation
+*.csv   linguist-documentation
+*.json  linguist-documentation

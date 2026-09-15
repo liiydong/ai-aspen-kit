@@ -1,0 +1,46 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+.python-version
+
+# ---------- 脚本运行产物 ----------
+# 04-脚本库 里的探查脚本会在工作区写这些临时文件
+_probe/
+out/
+output/
+tmp/
+*.log
+*.tmp
+*.bak
+
+# ---------- Excel / Word 临时文件 ----------
+~$*
+*.~lock.*
+
+# ---------- 编辑器 ----------
+.vscode/settings.local.json
+.idea/
+*.swp
+*.swo
+*~
+
+# ---------- 操作系统 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- 敏感内容：绝对不要提交 ----------
+# 本仓库是公开的。任何本地路径配置、账号、许可证都不要进来。
+.env
+.env.*
+assets.local.json
+*.license
+*.lic
+*.key
+*.pem
+secrets/

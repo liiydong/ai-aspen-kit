@@ -1,0 +1,44 @@
+# -*- coding: utf-8 -*-
+"""dump s3.bkp 完整面板"""
+import sys, time
+sys.stdout.reconfigure(encoding='utf-8')
+import win32com.client as win32
+import pythoncom
+P = r'D:\<化工工作区>\NA-Chemical-10000t_s3.bkp'
+MSGS = []
+
+
+class Sink:
+    def OnControlPanelMessage(self, *a):
+        s = ' '.join(str(x) for x in a).strip()
+        if s and s != 'False':
+            MSGS.append(s)
+
+
+doc = win32.DispatchEx('Apwn.Document')
+doc.SuppressDialogs = True
+win32.WithEvents(doc, Sink)
+doc.InitFromArchive2(P)
+time.sleep(3)
+doc.Engine.Run2(False)
+t0 = time.time()
+while time.time() - t0 < 200:
+    pythoncom.PumpWaitingMessages()
+    time.sleep(0.25)
+    if time.time() - t0 > 8:
+        try:
+            if not bool(doc.Engine.IsRunning):
+                break
+        except Exception:
+            break
+for _ in range(40):
+    pythoncom.PumpWaitingMessages()
+    time.sleep(0.05)
+print('消息数:', len(MSGS))
+for i, x in enumerate(MSGS[:60], 1):
+    print('%3d| %s' % (i, x[:170]))
+try:
+    doc.Close()
+except Exception:
+    pass
+print('DONE')
